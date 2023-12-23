@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231223 19:43:39.386" rpa="false" schemaversion="4">
+<suite id="s1" name="Project-Demo" source="e:\basic-automation\project-demo">
+<suite id="s1-s1" name="Test-Suite-1" source="e:\basic-automation\project-demo\test-suite-1.robot">
+<test id="s1-s1-t1" name="testcase-5" line="70">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231223 19:43:39.725" level="INFO">Opening browser 'chrome' to base url 'http://localhost/web-1/login.php'.</msg>
+<status status="PASS" starttime="20231223 19:43:39.725" endtime="20231223 19:43:41.653"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231223 19:43:41.691" level="INFO">Current page contains text 'Login'.</msg>
+<status status="PASS" starttime="20231223 19:43:41.653" endtime="20231223 19:43:41.691"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='username']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231223 19:43:41.715" level="INFO">Current page contains element 'xpath://input[@name='username']'.</msg>
+<status status="PASS" starttime="20231223 19:43:41.691" endtime="20231223 19:43:41.715"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:username</arg>
+<arg>${USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 19:43:41.715" level="INFO">Typing text 'ICHA' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20231223 19:43:41.715" endtime="20231223 19:43:41.978"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 19:43:41.978" level="INFO">Typing text '123456' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20231223 19:43:41.978" endtime="20231223 19:43:42.114"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231223 19:43:42.118" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20231223 19:43:42.115" endtime="20231223 19:43:42.473"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Daftar Produk</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231223 19:43:42.515" level="INFO">Current page contains text 'Daftar Produk'.</msg>
+<status status="PASS" starttime="20231223 19:43:42.473" endtime="20231223 19:43:42.515"/>
+</kw>
+<status status="PASS" starttime="20231223 19:43:39.715" endtime="20231223 19:43:42.515"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='edit.php?id=2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231223 19:43:42.515" level="INFO">Clicking element 'xpath://a[@href='edit.php?id=2']'.</msg>
+<status status="PASS" starttime="20231223 19:43:42.515" endtime="20231223 19:43:42.652"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:nama_produk</arg>
+<arg>KAIL NO 12</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 19:43:42.657" level="INFO">Typing text 'KAIL NO 12' into text field 'name:nama_produk'.</msg>
+<status status="PASS" starttime="20231223 19:43:42.656" endtime="20231223 19:43:42.818"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:harga</arg>
+<arg>150000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 19:43:42.818" level="INFO">Typing text '150000' into text field 'name:harga'.</msg>
+<status status="PASS" starttime="20231223 19:43:42.818" endtime="20231223 19:43:42.957"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:stok</arg>
+<arg>100</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231223 19:43:42.957" level="INFO">Typing text '100' into text field 'name:stok'.</msg>
+<status status="PASS" starttime="20231223 19:43:42.957" endtime="20231223 19:43:43.119"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231223 19:43:43.119" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20231223 19:43:43.119" endtime="20231223 19:43:43.403"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Daftar Produk</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231223 19:43:43.434" level="INFO">Current page contains text 'Daftar Produk'.</msg>
+<status status="PASS" starttime="20231223 19:43:43.403" endtime="20231223 19:43:43.434"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231223 19:43:45.442" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231223 19:43:43.434" endtime="20231223 19:43:45.443"/>
+</kw>
+<status status="PASS" starttime="20231223 19:43:39.715" endtime="20231223 19:43:45.443"/>
+</test>
+<status status="PASS" starttime="20231223 19:43:39.715" endtime="20231223 19:43:45.447"/>
+</suite>
+<status status="PASS" starttime="20231223 19:43:39.394" endtime="20231223 19:43:45.455"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Project-Demo">Project-Demo</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test-Suite-1">Project-Demo.Test-Suite-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
